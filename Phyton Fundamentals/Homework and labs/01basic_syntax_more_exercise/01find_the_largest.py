@@ -15,4 +15,3 @@ for j in range(len(digits)):
 print(largest_number)
 
 
-aaaaaaaaaaaaaaaaaaa
