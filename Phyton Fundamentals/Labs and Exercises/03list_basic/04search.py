@@ -11,7 +11,7 @@ for i in range(num_of_lines):
 
     my_list.append(some_string)
 
-    if some_string.count(special_word) > 0:
+    if special_word in some_string: # Може и със some_string.count(special_word), но това е по сложния и дълъг начин
         my_list_with_special_word.append(some_string)
 
 
