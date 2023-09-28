@@ -22,3 +22,5 @@ print(f"Count of positives: {len(positive_list)}\nSum of negatives: {sum(negativ
 
 
 
+
+
