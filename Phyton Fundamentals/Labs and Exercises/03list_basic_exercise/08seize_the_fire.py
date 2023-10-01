@@ -13,8 +13,7 @@ for current_fire_cell in fire_cells:
     value_of_cell = int(splited_fire_cells[1])
 
     if water_as_int < value_of_cell:
-
-        break
+        continue
     if value_of_cell < 1 or value_of_cell > 125:
         continue
 
