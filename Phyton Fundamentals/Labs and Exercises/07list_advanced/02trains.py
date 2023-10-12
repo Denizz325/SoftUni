@@ -1,7 +1,5 @@
 wagons = [0] * int(input())
 
-command = input()
-
 while True:
     command = input().split(" ")
 
