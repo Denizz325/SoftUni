@@ -21,7 +21,6 @@ def memory_game():
                 or index_1 >= len(sequence_of_elements)
                 or index_2 >= len(sequence_of_elements)
         ):
-            # Вмъкваме новите стойности на средата на списъка
             middle_index = len(sequence_of_elements) // 2
             value_to_insert = f"-{moves_count}a"
             sequence_of_elements.insert(middle_index, value_to_insert)
