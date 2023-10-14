@@ -17,3 +17,5 @@ total_free_chairs = check_the_rooms(count_of_rooms)
 
 if total_free_chairs >= 0:
     print(f"Game On, {total_free_chairs} free chairs left")
+
+
