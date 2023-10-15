@@ -1,21 +1,34 @@
-def check_the_rooms(number_of_rooms):
-    free_chair = 0
+#Без матрица с
 
-    for number_of_room in range(1, number_of_rooms + 1):
-        free_chairs_in_current_room, visitors = input().split()
-        difference = len(free_chairs_in_current_room) - int(visitors)
-        if difference < 0:
-            print(f"{abs(difference)} more chairs needed in room {number_of_room}")
-        free_chair += difference
-    return free_chair
+row1 = list(map(int, input().split()))
+row2 = list(map(int, input().split()))
+row3 = list(map(int, input().split()))
+
+winner = ""
+
+for row in [row1, row2, row3]:
+    if row.count(1) == 3:
+        winner = "first_player"
+    elif row.count(2) == 3:
+        winner = "second_player"
 
 
-count_of_rooms = int(input())
+for col in range(3):
+    if row1[col] == row2[col] == row3[col] == 1:
+        winner = "first_player"
+    elif row1[col] == row2[col] == row3[col] == 2:
+        winner = "second_player"
 
 
-total_free_chairs = check_the_rooms(count_of_rooms)
+if row1[0] == row2[1] == row3[2] == 1 or row1[2] == row2[1] == row3[0] == 1:
+    winner = "first_player"
+elif row1[0] == row2[1] == row3[2] == 2 or row1[2] == row2[1] == row3[0] == 2:
+    winner = "second_player"
 
-if total_free_chairs >= 0:
-    print(f"Game On, {total_free_chairs} free chairs left")
-
+if winner == "first_player":
+    print("First player won")
+elif winner == "second_player":
+    print("Second player won")
+else:
+    print("Draw!")
 
