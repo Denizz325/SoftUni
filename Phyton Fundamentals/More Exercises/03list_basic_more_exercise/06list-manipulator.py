@@ -10,35 +10,39 @@ while command != "end":
         if index < 0 or index >= len(numbers):
             print("Invalid index")
         else:
-            part1 = numbers[:index]
-            part2 = numbers[index:]
-            swapped_list = part2 + part1
+            part1 = numbers[:index + 1]
+            part2 = numbers[index + 1:]
+            numbers = part2 + part1
 
     elif command[0] == "max":
         if command[1] == "even":
             if even_numbers:
-                max_even = max(even_numbers) - 1
-                print(max_even)
+                max_even = max(numbers)
+                index = numbers.index(max_even)
+                print(index )
             else:
                 print("No matches")
         if command[1] == "odd":
             if odd_numbers:
-                max_even = max(odd_numbers) - 1
-                print(max_even)
+                max_odd = max(numbers)
+                index = numbers.index(max_odd)
+                print(index)
             else:
                 print("No matches")
 
     elif command[0] == "min":
         if command[1] == "even":
             if even_numbers:
-                min_even = min(even_numbers) - 1
-                print(min_even)
+                min_even = min(numbers)
+                index = numbers.index(min_even)
+                print(index)
             else:
                 print("No matches")
         if command[1] == "odd":
             if odd_numbers:
-                min_even = min(odd_numbers) - 1
-                print(min_even)
+                min_odd = min(numbers)
+                index = numbers.index(min_odd)
+                print(index)
             else:
                 print("No matches")
 
@@ -60,7 +64,7 @@ while command != "end":
                 print("[]")
             odd_numbers = []
             for num in numbers:
-                if num % 2 == 0:
+                if num % 2 != 0:
                     odd_numbers.append(num)
             print(odd_numbers[:2])
 
@@ -85,5 +89,5 @@ while command != "end":
                 if num % 2 == 0:
                     odd_numbers.append(num)
             print(odd_numbers[:2])
-
+    command = input().split()
 print(numbers)
