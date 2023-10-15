@@ -1,23 +1,30 @@
 numbers = [int(num) for num in input().split()]
 list_with_popped_nums = []
-index = int(input())
-while len(numbers) != 0:
-
-    if index < 0:
-        pass
-    elif index > numbers[-1]:
-        pass
-    else:
-        popped_value = numbers.pop(index)
-        list_with_popped_nums.append(popped_value)
-        for current_num in numbers:
-            if current_num < popped_value:
-                current_num += popped_value
-                if popped_value in numbers:
-                    index = numbers.index(popped_value)
-                    numbers[index] = current_num
-            else:
-                current_num -= popped_value
-
+while True:
+    if len(numbers) == 0:
+        break
     index = int(input())
-print(numbers)
+    if index < 0:
+        index = 0
+    elif index > len(numbers) - 1:
+        index = len(numbers) - 1
+
+    popped_value = numbers.pop(index)
+    if index > len(numbers) - 1:
+        first_element = numbers[0]
+        numbers.append(first_element)
+    if index < 0:
+        last_element = numbers[-1]
+        numbers.insert(0, last_element)
+    list_with_popped_nums.append(popped_value)
+
+    for i in range(len(numbers)):
+        if numbers[i] <= popped_value:
+            numbers[i] += popped_value
+        else:
+            numbers[i] -= popped_value
+
+
+
+result = sum(list_with_popped_nums)
+print(result)
