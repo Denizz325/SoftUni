@@ -1,3 +1,5 @@
+#Код на колежка( AneliqPeteva)
+
 from math import floor, sqrt
 def whats_closer(arg1, arg2, arg3, arg4):
     one = arg1 + arg2
