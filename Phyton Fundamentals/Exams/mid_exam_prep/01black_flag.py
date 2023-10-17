@@ -3,11 +3,11 @@ daily_plunder = int(input())
 expected_plunder = float(input())
 
 total_plunder = 0
-for _ in range(1, days):
+for day in range(1, days + 1):
     total_plunder += daily_plunder
-    if days % 3 == 0:
-        total_plunder *= 0.50 * daily_plunder
-    if days % 5 == 0:
+    if day % 3 == 0:
+        total_plunder += 0.50 * daily_plunder
+    if day % 5 == 0:
         total_plunder *= 0.7
 
 
