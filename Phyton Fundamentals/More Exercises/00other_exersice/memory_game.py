@@ -33,7 +33,7 @@ def memory_game():
                     second_el = sequence_of_elements[index_2]
                     sequence_of_elements.pop(index_1)
                     sequence_of_elements.remove(second_el)
-                    #Може и със
+                    #Може и със но може да ми даде грешка в някой случай
                     # sequence_of_elements.pop(max(index_1, index_2))
                     #sequence_of_elements.pop(min(index_1, index_2))
 
