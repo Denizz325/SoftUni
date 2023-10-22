@@ -7,7 +7,7 @@ for city in range(1, number_of_cities + 1):
     income = float(input())
     expenses = float(input())
 
-    if city % 3 == 0:
+    if city % 3 == 0 and city % 5 != 0:
         expenses += expenses * 0.50
         profit_per_day = income - expenses
 
