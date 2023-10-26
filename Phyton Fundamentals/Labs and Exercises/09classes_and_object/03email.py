@@ -19,6 +19,7 @@ while info != "Stop":
     email_info = Email(sender, receiver, content)
     emails_objects.append(email_info)
     info = input()
+
 indexes = [int(index) for index in input().split(", ")]
 for index in indexes:
     emails_objects[index].send()
