@@ -1,7 +1,7 @@
-first_str = input()
-second_str = input()
+first_string = input()
+second_string = input()
 
-while first_str in second_str:
-    second_str = second_str.replace("ice", "")
+while first_string in second_string:
+    second_string = second_string.replace("ice", "")
 
-print(second_str)
+print(second_string)
