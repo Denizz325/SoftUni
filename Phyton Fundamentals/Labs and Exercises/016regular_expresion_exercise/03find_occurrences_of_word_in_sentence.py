@@ -2,7 +2,7 @@ import re
 
 line = input()
 word_to_search = input()
-regex = r'\b' + re.escape(word_to_search) + r'\b'
-matches = re.findall(regex, line, re.IGNORECASE)
-
+pattern = fr'\b{word_to_search}\b'
+#pattern = r'\b' + re.escape(word_to_search) + r'\b'  |  МОЖЕ И ТАКА
+matches = re.findall(pattern, line, re.IGNORECASE)
 print(len(matches))
