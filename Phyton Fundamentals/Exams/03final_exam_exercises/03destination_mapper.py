@@ -1,7 +1,7 @@
 import re
 
 text = input()
-pattern = r'([=\/])([A-Z][a-zA-Z]{3,})\1'
+pattern = r'([=\/])([A-Z][a-zA-Z]{2,})\1'
 
 travel_points = 0
 destinations = []
