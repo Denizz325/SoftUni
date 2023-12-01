@@ -56,4 +56,6 @@ def process_commands():
         command = input().split("=>")
 
     print_func(cities)
+    
+
 process_commands()
