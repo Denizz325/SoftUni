@@ -30,7 +30,7 @@ def print_func(cities):
             print(f"{town} -> Population: {town_info['population']} citizens, Gold: {town_info['gold']} kg")
 
     else:
-        print(f"Ahoy, Captain! There are {len(cities)} wealthy settlements to go to:")
+        print("Ahoy, Captain! All targets have been plundered and destroyed!")
 
 
 def process_commands():
