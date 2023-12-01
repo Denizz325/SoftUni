@@ -30,7 +30,7 @@ def print_func(cities):
             print(f"{town} -> Population: {town_info['population']} citizens, Gold: {town_info['gold']} kg")
 
     else:
-        print("Ahoy, Captain! There are {count} wealthy settlements to go to:")
+        print(f"Ahoy, Captain! There are {len(cities)} wealthy settlements to go to:")
 
 
 def process_commands():
@@ -46,7 +46,7 @@ def process_commands():
         action = command[0]
 
         if action == "Plunder":
-            town, people, gold = command[1], int(command[2]),int(command[3])
+            town, people, gold = command[1], int(command[2]), int(command[3])
             plunder_func(cities, town, people, gold)
 
         elif action == "Prosper":
@@ -56,6 +56,6 @@ def process_commands():
         command = input().split("=>")
 
     print_func(cities)
-    
+
 
 process_commands()
