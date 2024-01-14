@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ab5baaa0-57d9-4ed8-b17a-150f9db439c0" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/03fast_food.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/04fashion_boutique.py" afterDir="false" />
@@ -12,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/01reverse_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/01reverse_numbers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/02stacked_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/02stacked_queries.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="ab5baaa0-57d9-4ed8-b17a-150f9db439c0" name="Changes" comment="" />
+>>>>>>> 8a1224d465f0a9b39455742dc519189e50ef7195
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,11 +50,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PYTHON\SoftUni\Pyton Advanced\Labs and Exercises\01lists_as_stacks_and_queues" />
     </key>
   </component>
+=======
+>>>>>>> 8a1224d465f0a9b39455742dc519189e50ef7195
   <component name="RunManager" selected="Python.01reverse_numbers">
     <configuration name="01reverse_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SoftUni" />
