@@ -1,18 +1,22 @@
-# stack = []
-# opening_brackets = {'(', '[', '{'}
-# closing_brackets = {')': '(', ']': '[', '}': '{'}
-#
-# input_sequence = input()
-#
-# for char in input_sequence:
-#     if char in opening_brackets:
-#         stack.append(char)
-#     elif char in closing_brackets:
-#         if not stack or stack.pop() != closing_brackets[char]:
-#             print("NO")
-#             break
-# else:
-#     print("YES" if not stack else "NO")
+stack = []
+opening_brackets = {'(', '[', '{'}
+closing_brackets = {')': '(', ']': '[', '}': '{'}
+
+input_sequence = input()
+
+for char in input_sequence:
+    if char in opening_brackets:
+        stack.append(char)
+    elif char in closing_brackets:
+        if not stack or stack.pop() != closing_brackets[char]:
+            print("NO")
+            break
+else:
+    print("YES" if not stack else "NO")
+
+
+#############################################2ро решение###########################################################
+
 
 from collections import deque
 
