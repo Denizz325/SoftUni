@@ -1,4 +1,4 @@
-num = list(input().split())
+num = input().split()
 
 while num:
     print(num.pop(), end=' ')
