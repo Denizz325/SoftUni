@@ -16,3 +16,9 @@ while pumps_copy:
 
     else:
         pumps.rotate(-1)
+        pumps_copy = pumps.copy()
+        index += 1
+        gas_in_tank = 0
+
+
+print(index)
