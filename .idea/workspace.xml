@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5baaa0-57d9-4ed8-b17a-150f9db439c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/01reverse_numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02lists_as_stacks_and_queues_exercise/02stacked_queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues/01reverse_strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/02matching_parentheses.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues/02matching_parentheses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/03supermarket.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues/03supermarket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/04water_dispenser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues/04water_dispenser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/05hot_potato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyton Advanced/Labs and Exercises/01lists_as_stacks_and_queues/05hot_potato.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab5baaa0-57d9-4ed8-b17a-150f9db439c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,17 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.01lists_as_stacks_and_queues.executor": "Run",
-    "Python.01reverse_numbers.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/PYTHON/SoftUni",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.01lists_as_stacks_and_queues.executor&quot;: &quot;Run&quot;,
+    &quot;Python.01reverse_numbers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/PYTHON/SoftUni&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.01reverse_numbers">
     <configuration name="01reverse_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SoftUni" />
