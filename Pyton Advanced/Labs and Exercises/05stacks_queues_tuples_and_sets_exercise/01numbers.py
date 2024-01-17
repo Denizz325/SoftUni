@@ -27,5 +27,5 @@ for _ in range(int(input())):
 
 final_first_sequence = sorted(list(first_sequence))
 final_second_sequence = sorted(list(second_sequence))
-print(", ".join(str(i) for i in final_first_sequence))
-print(", ".join(str(i) for i in final_second_sequence))  
+print(*final_first_sequence)
+print(*final_second_sequence)
