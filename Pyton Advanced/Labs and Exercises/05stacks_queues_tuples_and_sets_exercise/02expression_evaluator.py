@@ -1,7 +1,7 @@
 from collections import deque
 from math import floor
 
-expression = deque(input().split())  # [6, 5, -, 4, 5, +]
+expression = deque(input().split())
 
 idx = 0
 
