@@ -1,4 +1,4 @@
-row, coll = [int(num) for num in input().split(", ")]
+row, col = [int(num) for num in input().split(", ")]
 
 matrix = []
 total_amount = 0
