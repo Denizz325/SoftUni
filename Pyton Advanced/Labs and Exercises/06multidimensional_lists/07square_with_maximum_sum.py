@@ -13,7 +13,8 @@ for row_index in range(row - 1):
         current_el = matrix[row_index][col_index]
         next_el = matrix[row_index][col_index + 1]
         el_under = matrix[row_index + 1][col_index]
-        el_under_next_el = matrix[row_index + 1][col_index + 1] # Това е елемента под next_el или елемента диагонал на current_el
+        el_under_next_el = matrix[row_index + 1][col_index + 1]
+        # el_under_next_el = Това е елемента под next_el или елемента диагонал на current_el
 
         total_sum = current_el + next_el + el_under + el_under_next_el
 
