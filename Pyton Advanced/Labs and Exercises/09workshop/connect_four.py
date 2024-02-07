@@ -1,3 +1,7 @@
+#Дооправи го защото дава грешка
+
+
+
 class FullColumnError(Exception):
     pass
 
@@ -59,6 +63,7 @@ def is_winner(current_row_i, current_col_i, board):
 
     else:
         return False
+
 
 def print_board(board):
     for row in board:
