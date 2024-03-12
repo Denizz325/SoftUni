@@ -9,87 +9,74 @@ class Zoo:
 
     def add_animal(self, animal, price):
         if self.__budget >= price and self.__animal_capacity > len(self.animals):
-            self.animals.append(animal)
             self.__budget -= price
-            return f"{self.name} the {animal.__class__.__name__} added to the zoo"
-        elif self.__animal_capacity > len(self.animals) and self.__budget < price:
+            self.animals.append(animal)
+            return f"{animal.name} the {animal.__class__.__name__} added to the zoo"
+        elif self.__budget < price and self.__animal_capacity > len(self.animals):
             return "Not enough budget"
         return "Not enough space for animal"
 
     def hire_worker(self, worker):
-        if self.__workers_capacity > len(self.workers):
+        if len(self.workers) < self.__workers_capacity:
             self.workers.append(worker)
-            return f"{self.name} the {worker.__class__.__name__} hired successfully"
+            return f"{worker.name} the {worker.__class__.__name__} hired successfully"
         return "Not enough space for worker"
 
     def fire_worker(self, worker_name):
-        try:
-            worker = [w for w in self.workers if w == worker_name][0]
-        except IndexError:
-            return f"There is no {worker_name} in the zoo"
-        return f"{worker_name} fired successfully"
-
-
+        for worker in self.workers:
+            if worker.name == worker_name:
+                self.workers.remove(worker)
+                return f"{worker_name} fired successfully"
+        return f"There is no {worker_name} in the zoo"
 
     def pay_workers(self):
-        money_to_pay = sum([w.salary for w in self.workers])
-
-        if money_to_pay <= self.__budget:
-            self.__budget -= money_to_pay
+        total_salaries = 0
+        for worker in self.workers:
+            total_salaries += worker.salary
+        if self.__budget >= total_salaries:
+            self.__budget -= total_salaries
             return f"You payed your workers. They are happy. Budget left: {self.__budget}"
-        return "You have no budget to pay your workers. They are unhappy"
+        return f"You have no budget to pay your workers. They are unhappy"
 
     def tend_animals(self):
-        money_to_feed = sum([a.money_for_car for a in self.animals])
-
-        if money_to_feed <= self.__budget:
-            self.__budget -= money_to_feed
-            return f"You tended all the animals. They are happy. Budget left: {money_to_feed}"
+        total_care_money = 0
+        for animal in self.animals:
+            total_care_money += animal.money_for_care
+        if self.__budget >= total_care_money:
+            self.__budget -= total_care_money
+            return f"You tended all the animals. They are happy. Budget left: {self.__budget}"
         return "You have no budget to tend the animals. They are unhappy."
 
-    def profit(self, amount: int):
+    def profit(self, amount):
         self.__budget += amount
 
     def animals_status(self):
         result = f"You have {len(self.animals)} animals\n"
-        lions = [a for a in self.animals if a.__class__.__name__ == "Lion"]
-        amount_of_lion = len(lions)
-        result += f"----- {amount_of_lion} Lions:\n"
+        lions = list(filter(lambda x: x.__class__.__name__ == "Lion", self.animals))
+        tigers = list(filter(lambda x: x.__class__.__name__ == "Tiger", self.animals))
+        cheetahs = list(filter(lambda x: x.__class__.__name__ == "Cheetah", self.animals))
+        result += f"----- {len(lions)} Lions:"
         for lion in lions:
-            result += f"{lion}/n"
-
-        tigers = [t for t in self.animals if t.__class__.__name__ == "Tiger"]
-        amount_of_tiger = len(tigers)
-        result += f"----- {amount_of_tiger} Tigers:\n"
+            result += "\n" + lion.__repr__()
+        result += f"\n----- {len(tigers)} Tigers:"
         for tiger in tigers:
-            result += f"{tigers}/n"
-
-        cheetahs = [c for c in self.animals if c.__class__.__name__ == "Cheetahs"]
-        amount_of_cheetahs = len(cheetahs)
-        result += f"----- {amount_of_cheetahs} Lions:\n"
+            result += "\n" + tiger.__repr__()
+        result += f"\n----- {len(cheetahs)} Cheetahs:"
         for cheetah in cheetahs:
-            result += f"{cheetah}/n"
-
+            result += "\n" + cheetah.__repr__()
         return result
-
-    def worker_status(self):
+    def workers_status(self):
         result = f"You have {len(self.workers)} workers\n"
-
-        keepers = [w for w in self.workers if w.__class__.__name__ == "Keepers"]
-        caretaker = [w for w in self.workers if w.__class__.__name__ == "Caretaker"]
-        vets = [w for w in self.workers if w.__class__.__name__ == "Vet"]
-
-        result += f"----- {len(keepers)} Keepers:\n"
-        for k in keepers:
-            result += f"{k}\n"
-
-        result += f"----- {len(caretaker)} Caretaker:\n"
-        for c in caretaker:
-            result += f"{c}\n"
-
-        result += f"----- {len(vets)} Keepers:\n"
-        for v in vets:
-            result += f"{v}\n"
-
+        keepers = list(filter(lambda x: x.__class__.__name__ == "Keeper", self.workers))
+        caretakers = list(filter(lambda x: x.__class__.__name__ == "Caretaker", self.workers))
+        vets = list(filter(lambda x: x.__class__.__name__ == "Vet", self.workers))
+        result += f"----- {len(keepers)} Keepers:"
+        for keeper in keepers:
+            result += "\n" + keeper.__repr__()
+        result += f"\n----- {len(caretakers)} Caretakers:"
+        for caretaker in caretakers:
+            result += "\n" + caretaker.__repr__()
+        result += f"\n----- {len(vets)} Vets:"
+        for vet in vets:
+            result += "\n" + vet.__repr__()
         return result
-
