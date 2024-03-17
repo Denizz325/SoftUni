@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Python OOP/Labs and Exercise/08encapsulation_exercise/02pizza_maker" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Python OOP/Labs and Exercise/012polymorphism_and_abstraction_exercise/05animals" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
