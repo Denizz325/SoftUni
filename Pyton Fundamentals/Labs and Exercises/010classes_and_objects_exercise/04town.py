@@ -15,6 +15,10 @@ class Town:
 
 
 town = Town("Sofia")
+<<<<<<< HEAD
 town.set_latitude("42° 41\' 51.fourth_exercise\" N")
+=======
+town.set_latitude("42° 41\' 51.fourth_ex\" N")
+>>>>>>> de306f38a8c64fa7f70c194e8cab08628700344e
 town.set_longitude("23° 19\' 26.94\" E")
 print(town)
